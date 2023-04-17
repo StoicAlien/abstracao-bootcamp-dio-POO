@@ -17,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
         boolean quit = false;
-        System.out.println("Pressione:");
+        System.out.println("Pressione:");        
         imprimirInstrucoes();
         while (!quit) {
             try {
