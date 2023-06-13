@@ -102,26 +102,25 @@ public class Main {
     }
 
     private static void imprimirInstrucoes() {
-        System.out.println("\t0 - Para imprimir instruções"
-                + "\n\t1 - Para imprimir cursos"
-                + "\n\t2 - Para imprimir mentorias"
-                + "\n\t3 - Para imprimir bootcamps"
-                + "\n\t4 - Para imprimir devs"
-                + "\n\t5 - Para imprimir informações dos devs"
+        System.out.println("\n\t1 - Para imprimir cursos"
+                + "\t2 - Para imprimir mentorias"
+                + "\t3 - Para imprimir bootcamps"
+                + "\t4 - Para imprimir devs"
+                + "\t5 - Para imprimir informações dos devs"
                 + "\n\t6 - Para adicionar cursos"
-                + "\n\t7 - Para adicionar mentorias"
-                + "\n\t8 - Para adicionar bootcamps"
-                + "\n\t9 - Para adicionar devs"
+                + "\t7 - Para adicionar mentorias"
+                + "\t8 - Para adicionar bootcamps"
+                + "\t9 - Para adicionar devs"
                 + "\n\t10 - Para remover cursos"
-                + "\n\t11 - Para remover mentorias"
-                + "\n\t12 - Para remover bootcamps"
-                + "\n\t13 - Para remover devs"
+                + "\t11 - Para remover mentorias"
+                + "\t12 - Para remover bootcamps"
+                + "\t13 - Para remover devs"
                 + "\n\t14 - Para pesquisar por cursos"
-                + "\n\t15 - Para pesquisar por mentorias"
-                + "\n\t16 - Para pesquisar por bootcamps"
-                + "\n\t17 - Para pesquisar por devs"
+                + "\t15 - Para pesquisar por mentorias"
+                + "\t16 - Para pesquisar por bootcamps"
+                + "\t17 - Para pesquisar por devs"
                 + "\n\t18 - Para atualizar dev"
-                + "\n\t19 - Para imprimir informações de cada bootcamp"
+                + "\t\t19 - Para imprimir informações de cada bootcamp"
                 + "\n\t20 - Para sair da aplicação");
     }
 
@@ -248,7 +247,7 @@ public class Main {
         while (!quit) {
             try {
                 System.out.println("Deseja adicionar um curso para esse bootcamp?"
-                        + " (1 - Sim | 2 - Não");
+                        + " (1 - Sim | 2 - Não)");
                 System.out.print("Entrada: ");
                 int entrada = scanner.nextInt();
                 scanner.nextLine();
@@ -282,7 +281,7 @@ public class Main {
         while (!quit) {
             try {
                 System.out.println("Deseja adicionar uma mentoria para esse bootcamp?"
-                        + " (1 - Sim | 2 - Não");
+                        + " (1 - Sim | 2 - Não)");
                 System.out.print("Entrada: ");
                 int entrada = scanner.nextInt();
                 scanner.nextLine();
@@ -341,7 +340,7 @@ public class Main {
         while (!quit) {
             try {
                 System.out.println("Deseja adicionar Dev em um Bootcamp?"
-                        + " (1 - Sim | 2 - Não");
+                        + " (1 - Sim | 2 - Não)");
                 System.out.print("Entrada: ");
                 int entrada = scanner.nextInt();
                 scanner.nextLine();
@@ -375,7 +374,7 @@ public class Main {
         while (!quit) {
             try {
                 System.out.println("Deseja avançar progresso do Dev?"
-                        + " (1 - Sim | 2 - Não");
+                        + " (1 - Sim | 2 - Não)");
                 System.out.print("Entrada: ");
                 int entrada = scanner.nextInt();
                 scanner.nextLine();
@@ -433,7 +432,7 @@ public class Main {
             System.out.println("Falha ao remover bootcamp. Bootcamp não encontrado");
             return;
         }
-        meusBootcamps.remove(bootcamp);
+        meusBootcamps.remove(bootcamp);        
         System.out.println("Bootcamp removido com sucesso");
     }
 
